@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/recipe/strawberry-jam/</loc>
+    <lastmod>2017-05-23T22:44:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/recipe/lingonberry-jam/</loc>
+    <lastmod>2017-05-23T22:44:03+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/recipe/apple-jam/</loc>
+    <lastmod>2017-05-23T22:38:56+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/</loc>
+    <lastmod>2017-05-23T22:44:14+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/recipe/</loc>
+    <lastmod>2017-05-23T22:44:14+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://hlaueriksson.github.io/jamstack/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

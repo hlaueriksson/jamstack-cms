@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recipes on JAMstack Recipes</title>
+    <link>http://hlaueriksson.github.io/jamstack/recipe/</link>
+    <description>Recent content in Recipes on JAMstack Recipes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 May 2017 22:44:14 +0200</lastBuildDate>
+    
+	<atom:link href="http://hlaueriksson.github.io/jamstack/recipe/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strawberry Jam</title>
+      <link>http://hlaueriksson.github.io/jamstack/recipe/strawberry-jam/</link>
+      <pubDate>Tue, 23 May 2017 22:44:14 +0200</pubDate>
+      
+      <guid>http://hlaueriksson.github.io/jamstack/recipe/strawberry-jam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lingonberry Jam</title>
+      <link>http://hlaueriksson.github.io/jamstack/recipe/lingonberry-jam/</link>
+      <pubDate>Tue, 23 May 2017 22:44:03 +0200</pubDate>
+      
+      <guid>http://hlaueriksson.github.io/jamstack/recipe/lingonberry-jam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple Jam</title>
+      <link>http://hlaueriksson.github.io/jamstack/recipe/apple-jam/</link>
+      <pubDate>Tue, 23 May 2017 22:38:56 +0200</pubDate>
+      
+      <guid>http://hlaueriksson.github.io/jamstack/recipe/apple-jam/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
