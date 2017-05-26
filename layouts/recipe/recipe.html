@@ -3,6 +3,13 @@
 <section>
   <img src="{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
   
+  <h2>Ingredients</h2>
+  <ul id="ingredients">
+  {{ range $.Param "ingredients" }}
+    <li>{{ .amount }} {{ .unit }} {{ .name }}</li>
+  {{ end }}
+  </ul>
+
   {{ .Content | markdownify }}
 </section>
 

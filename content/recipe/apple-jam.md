@@ -7,13 +7,22 @@ layout = "recipe"
 [image]
 text = "Apples"
 url = "apples.jpg"
+
+[[ingredients]]
+amount = 1
+unit = "kg"
+name = "apples"
+
+[[ingredients]]
+amount = 0.5
+unit = "dl"
+name = "water"
+
+[[ingredients]]
+amount = 5
+unit = "dl"
+name = "sugar"
 +++
-
-## Ingredients
-
-* 1 kg apples
-* 0.5 dl of water
-* 5 dl of sugar
 
 ## Method
 

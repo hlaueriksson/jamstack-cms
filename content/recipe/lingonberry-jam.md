@@ -7,13 +7,22 @@ layout = "recipe"
 [image]
 text = "Lingonberries"
 url = "lingonberries.jpg"
+
+[[ingredients]]
+amount = 2
+unit = "dl"
+name = "water"
+
+[[ingredients]]
+amount = 0.5
+unit = "kg"
+name = "sugar"
+
+[[ingredients]]
+amount = 1
+unit = "kg"
+name = "lingonberries"
 +++
-
-## Ingredients
-
-* 2 dl of water
-* 0.5 kg of sugar
-* 1 kg lingonberries
 
 ## Method
 

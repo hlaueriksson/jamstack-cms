@@ -7,12 +7,17 @@ layout = "recipe"
 [image]
 text = "Strawberries"
 url = "strawberries.jpg"
+
+[[ingredients]]
+amount = 5
+unit = "dl"
+name = "sugar"
+
+[[ingredients]]
+amount = 2
+unit = "l"
+name = "strawberries"
 +++
-
-## Ingredients
-
-* 5 dl sugar
-* 2 l strawberries
 
 ## Method
 
