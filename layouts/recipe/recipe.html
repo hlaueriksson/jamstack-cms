@@ -1,0 +1,9 @@
+{{ partial "header" . }}
+
+<section>
+  <img src="{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
+  
+  {{ .Content | markdownify }}
+</section>
+
+{{ partial "footer" . }}
