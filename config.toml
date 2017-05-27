@@ -1,4 +1,3 @@
 baseURL = "http://hlaueriksson.github.io/jamstack/"
 languageCode = "en-us"
 title = "JAMstack Recipes"
-theme = "blank"
