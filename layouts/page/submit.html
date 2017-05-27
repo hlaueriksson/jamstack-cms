@@ -1,0 +1,24 @@
+{{ partial "header" . }}
+
+<section>
+  {{ .Content | markdownify }}
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Recipe</legend>
+
+      <label for="title">Title:</label><br />
+      <input type="text" name="title" size="80" /><br />
+
+      <label for="ingredients">Ingredients:</label><br />
+      <textarea name="ingredients" rows="4" cols="80"></textarea><br />
+
+      <label for="method">Method:</label><br />
+      <textarea name="method" rows="8" cols="80"></textarea><br />
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+</section>
+
+{{ partial "footer" . }}
