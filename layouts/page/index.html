@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+
+<section>
+  {{ .Content | markdownify }}
+</section>
+
+<section class="recipes">
+  {{ range where .Site.Pages.ByTitle "Params.layout" "recipe" }}
+    {{ partial "summary.html" . }}
+  {{ end }}
+</section>
+
+{{ partial "footer" . }}

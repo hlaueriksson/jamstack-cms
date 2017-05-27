@@ -4,6 +4,8 @@ draft = false
 title = "Apple Jam"
 layout = "recipe"
 
+description = "Jam made of apples tastes awesome."
+
 [image]
 text = "Apples"
 url = "apples.jpg"

@@ -4,6 +4,8 @@ draft = false
 title = "Lingonberry Jam"
 layout = "recipe"
 
+description = "Jam made of lingonberries tastes great."
+
 [image]
 text = "Lingonberries"
 url = "lingonberries.jpg"

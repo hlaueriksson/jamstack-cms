@@ -1,6 +1,10 @@
 {{ partial "header" . }}
 
 <section>
+  <h1>{{ .Title }}</h1>
+
+  <p>{{ $.Param "description" }}</p>
+
   <img src="{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
   
   <h2>Ingredients</h2>
