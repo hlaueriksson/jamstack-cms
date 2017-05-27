@@ -5,7 +5,7 @@
 </section>
 
 <section class="recipes">
-  {{ range where .Site.Pages.ByTitle "Params.layout" "recipe" }}
+  {{ range where .Site.Pages.ByTitle ".Params.layout" "recipe" }}
     {{ partial "summary.html" . }}
   {{ end }}
 </section>

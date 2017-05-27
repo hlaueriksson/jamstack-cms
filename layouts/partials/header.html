@@ -6,4 +6,9 @@
   </head>
   <body>
     <header>
+      <section class="navigation">
+        {{ range where .Site.Pages.ByTitle ".Params.navigation" true }}
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ end }}
+      </section>
     </header>
