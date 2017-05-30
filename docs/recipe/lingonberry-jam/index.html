@@ -1,67 +1,63 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Lingonberry Jam</title>
-	
-	
-	<link rel="stylesheet" href="http://hlaueriksson.github.io/jamstack/css/style.css">
-	
-	<meta name="generator" content="Hugo 0.21" />
-</head>
-<body>
-	<header>
-		<a href="http://hlaueriksson.github.io/jamstack/">JAMstack Recipes</a>
-		<nav>
-			<ul>
-				
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<article>
-			<h1>Lingonberry Jam</h1>
-			<time>23.05.2017 22:44</time>
-			<div>
-				
-			</div>
-			<div>
-				<ul id="tags">
-					
-				</ul>
-			</div>
-			<div>
-				
-			</div>
-		</article>
-	</main>
-	<aside>
-		<div>
-			<div>
-				<h3>LATEST POSTS</h3>
-			</div>
-			<div>
-				<ul>
-					
-					<li><a href="http://hlaueriksson.github.io/jamstack/recipe/strawberry-jam/">Strawberry Jam</a></li>
-					
-					<li><a href="http://hlaueriksson.github.io/jamstack/recipe/lingonberry-jam/">Lingonberry Jam</a></li>
-					
-					<li><a href="http://hlaueriksson.github.io/jamstack/recipe/apple-jam/">Apple Jam</a></li>
-					
-					<li><a href="http://hlaueriksson.github.io/jamstack/categories/">Categories</a></li>
-					
-					<li><a href="http://hlaueriksson.github.io/jamstack/">JAMstack Recipes</a></li>
-					
-				</ul>
-			</div>
-		</div>
-	</aside>
+<!doctype html>
+<html>
+  <head>
+    <title>JAMstack Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://hlaueriksson.github.io/jamstack/">
+    <link rel="stylesheet" href="app.css"/>
+  </head>
+  <body>
+    <header>
+      <section class="navigation">
+        
+          <h2><a href="http://hlaueriksson.github.io/jamstack/about/">About</a></h2>
+        
+          <h2><a href="http://hlaueriksson.github.io/jamstack/submit/">Submit Recipe</a></h2>
+        
+      </section>
+    </header>
 
-	<footer>
-		<p>&copy; 2017 <a href="http://hlaueriksson.github.io/jamstack/">JAMstack Recipes</a></p>
-	</footer>
+<section id="recipe" data-slug="lingonberry-jam" data-api="http://localhost:7071/api/Ingredients/">
+  <h1>Lingonberry Jam</h1>
+
+  <p>Jam made of lingonberries tastes great.</p>
+
+  <img src="/jamstack/recipe/lingonberry-jam/lingonberries.jpg" alt="Lingonberries" />
+  
+  <h2>Ingredients</h2>
+  <ul id="metric" class="ingredients">
+  
+    <li>2 dl water</li>
+  
+    <li>0.5 kg sugar</li>
+  
+    <li>1 kg lingonberries</li>
+  
+  </ul>
+  <ul id="imperial" class="ingredients"></ul>
+
+  <div id="measurements">
+    <p>Display measurements in:</p>
+    <select id="system">
+      <option value="metric">Metric System</option>
+      <option value="imperial">Imperial System</option>
+    </select>
+  </div>
+
+  <h2 id="method">Method</h2>
+
+<ol>
+<li>Boil berries and water for 15-20 minutes.</li>
+<li>Add sugar and stir until sugar has melted. Boil another 5 min.</li>
+<li>Foam and sprinkle the jam into cans.</li>
+</ol>
+
+</section>
+
+<footer>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
