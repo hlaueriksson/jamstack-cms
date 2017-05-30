@@ -1,0 +1,5 @@
+[recipe]
+get_ingredients = "http://localhost:7071/api/Ingredients/"
+
+[submit]
+post_recipe = "http://localhost:7071/api/Recipe"

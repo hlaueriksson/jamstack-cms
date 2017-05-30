@@ -1,18 +1,27 @@
 {{ partial "header" . }}
 
-<section>
+<section id="recipe" data-slug="{{ .File.TranslationBaseName }}" data-api="{{ .Site.Data.api.recipe.get_ingredients }}">
   <h1>{{ .Title }}</h1>
 
   <p>{{ $.Param "description" }}</p>
 
-  <img src="{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
+  <img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
   
   <h2>Ingredients</h2>
-  <ul id="ingredients">
+  <ul id="metric" class="ingredients">
   {{ range $.Param "ingredients" }}
     <li>{{ .amount }} {{ .unit }} {{ .name }}</li>
   {{ end }}
   </ul>
+  <ul id="imperial" class="ingredients"></ul>
+
+  <div id="measurements">
+    <p>Display measurements in:</p>
+    <select id="system">
+      <option value="metric">Metric System</option>
+      <option value="imperial">Imperial System</option>
+    </select>
+  </div>
 
   {{ .Content | markdownify }}
 </section>

@@ -1,9 +1,9 @@
 {{ partial "header" . }}
 
-<section>
+<section id="submit">
   {{ .Content | markdownify }}
 
-  <form action="#" method="post">
+  <form id="recipe" action="{{ .Site.Data.api.submit.post_recipe }}" method="post">
     <fieldset>
       <legend>Recipe</legend>
 
@@ -19,6 +19,8 @@
       <input type="submit" value="Submit">
     </fieldset>
   </form>
+
+  <div id="result"></div>
 </section>
 
 {{ partial "footer" . }}
