@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JAMstack Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://hlaueriksson.github.io/jamstack/">
+    <link rel="stylesheet" href="app.css"/>
+  </head>
+  <body>
+    <header>
+      <section class="navigation">
+        
+          <h2><a href="https://hlaueriksson.github.io/jamstack/about/">About</a></h2>
+        
+          <h2><a href="https://hlaueriksson.github.io/jamstack/submit/">Submit Recipe</a></h2>
+        
+      </section>
+    </header>
+
+<section id="submit">
+  <h1 id="submit-recipe">Submit Recipe</h1>
+
+<p>Submit your favorite jam recipe&hellip;
+
+  <form id="recipe" action="http://localhost:7071/api/Recipe" method="post">
+    <fieldset>
+      <legend>Recipe</legend>
+
+      <label for="title">Title:</label><br />
+      <input type="text" name="title" size="80" /><br />
+
+      <label for="ingredients">Ingredients:</label><br />
+      <textarea name="ingredients" rows="4" cols="80"></textarea><br />
+
+      <label for="method">Method:</label><br />
+      <textarea name="method" rows="8" cols="80"></textarea><br />
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <div id="result"></div>
+</section>
+
+<footer>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

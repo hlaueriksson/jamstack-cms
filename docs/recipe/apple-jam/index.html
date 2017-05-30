@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JAMstack Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://hlaueriksson.github.io/jamstack/">
+    <link rel="stylesheet" href="app.css"/>
+  </head>
+  <body>
+    <header>
+      <section class="navigation">
+        
+          <h2><a href="https://hlaueriksson.github.io/jamstack/about/">About</a></h2>
+        
+          <h2><a href="https://hlaueriksson.github.io/jamstack/submit/">Submit Recipe</a></h2>
+        
+      </section>
+    </header>
+
+<section id="recipe" data-slug="apple-jam" data-api="http://localhost:7071/api/Ingredients/">
+  <h1>Apple Jam</h1>
+
+  <p>Jam made of apples tastes awesome.</p>
+
+  <img src="/jamstack/recipe/apple-jam/apples.jpg" alt="Apples" />
+  
+  <h2>Ingredients</h2>
+  <ul id="metric" class="ingredients">
+  
+    <li>1 kg apples</li>
+  
+    <li>0.5 dl water</li>
+  
+    <li>5 dl sugar</li>
+  
+  </ul>
+  <ul id="imperial" class="ingredients"></ul>
+
+  <div id="measurements">
+    <p>Display measurements in:</p>
+    <select id="system">
+      <option value="metric">Metric System</option>
+      <option value="imperial">Imperial System</option>
+    </select>
+  </div>
+
+  <h2 id="method">Method</h2>
+
+<ol>
+<li>Scale and kernel of the apples. Place the peeled apple slices in a bowl of cold water so that they do not darken.</li>
+<li>Lift the apples to a saucepan and add water. Boil on low heat and stir regularly. Stir the sugar when the apples soften (feel a test piece). Let boil again.</li>
+<li>Mix the mash to the desired consistency with a rod mixer.</li>
+<li>In the fridge the mash stays for 1-2 weeks. In freezer it will last up to a year.</li>
+</ol>
+
+</section>
+
+<footer>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
