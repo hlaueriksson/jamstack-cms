@@ -1,5 +1,5 @@
 [recipe]
-get_ingredients = "http://localhost:7071/api/Ingredients/"
+get_ingredients = "https://jamstack.azurewebsites.net/api/Ingredients/"
 
 [submit]
-post_recipe = "http://localhost:7071/api/Recipe"
+post_recipe = "https://jamstack.azurewebsites.net/api/Recipe"
