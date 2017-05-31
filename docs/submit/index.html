@@ -40,20 +40,19 @@
 <p>Submit your favorite jam recipe&hellip;
 
       <form id="recipe" action="https://jamstack.azurewebsites.net/api/Recipe" method="post">
-        <fieldset>
-          <legend>Recipe</legend>
-
-          <label for="title">Title:</label><br />
-          <input type="text" id="title" name="title" size="80" /><br />
-
-          <label for="ingredients">Ingredients:</label><br />
-          <textarea id="ingredients" name="ingredients" rows="4" cols="80"></textarea><br />
-
-          <label for="method">Method:</label><br />
-          <textarea id="method" name="method" rows="8" cols="80"></textarea><br />
-
-          <input type="submit" value="Submit">
-        </fieldset>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="form-group">
+          <label for="ingredients">Ingredients</label>
+          <textarea class="form-control" id="ingredients" name="ingredients" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="method">Method</label>
+          <textarea class="form-control" id="method" name="method" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
       <div id="result"></div>
