@@ -1,29 +1,31 @@
 {{ partial "header" . }}
 
-<section id="recipe" data-slug="{{ .File.TranslationBaseName }}" data-api="{{ .Site.Data.api.recipe.get_ingredients }}">
-  <h1>{{ .Title }}</h1>
+<div id="data" data-slug="{{ .File.TranslationBaseName }}" data-api="{{ .Site.Data.api.recipe.get_ingredients }}"></div>
 
-  <p>{{ $.Param "description" }}</p>
+<div class="row marketing">
+  <div class="col">
+      <h1>{{ .Title }}</h1>
+      <p>{{ $.Param "description" }}</p>
+      <img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
 
-  <img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" />
-  
-  <h2>Ingredients</h2>
-  <ul id="metric" class="ingredients">
-  {{ range $.Param "ingredients" }}
-    <li>{{ .amount }} {{ .unit }} {{ .name }}</li>
-  {{ end }}
-  </ul>
-  <ul id="imperial" class="ingredients"></ul>
+      <div id="measurements">
+        <span>Display measurements in:</span>
+        <select id="system">
+          <option value="metric">Metric System</option>
+          <option value="imperial">Imperial System</option>
+        </select>
+      </div>
 
-  <div id="measurements">
-    <p>Display measurements in:</p>
-    <select id="system">
-      <option value="metric">Metric System</option>
-      <option value="imperial">Imperial System</option>
-    </select>
+      <h2>Ingredients</h2>
+      <ul id="metric" class="ingredients">
+        {{ range $.Param "ingredients" }}
+          <li>{{ .amount }} {{ .unit }} {{ .name }}</li>
+        {{ end }}
+      </ul>
+      <ul id="imperial" class="ingredients"></ul>
+
+      {{ .Content | markdownify }}
   </div>
-
-  {{ .Content | markdownify }}
-</section>
+</div>
 
 {{ partial "footer" . }}

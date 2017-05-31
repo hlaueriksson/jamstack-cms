@@ -1,26 +1,28 @@
 {{ partial "header" . }}
 
-<section id="submit">
-  {{ .Content | markdownify }}
+<div class="row marketing">
+  <div class="col">
+      {{ .Content | markdownify }}
 
-  <form id="recipe" action="{{ .Site.Data.api.submit.post_recipe }}" method="post">
-    <fieldset>
-      <legend>Recipe</legend>
+      <form id="recipe" action="{{ .Site.Data.api.submit.post_recipe }}" method="post">
+        <fieldset>
+          <legend>Recipe</legend>
 
-      <label for="title">Title:</label><br />
-      <input type="text" name="title" size="80" /><br />
+          <label for="title">Title:</label><br />
+          <input type="text" id="title" name="title" size="80" /><br />
 
-      <label for="ingredients">Ingredients:</label><br />
-      <textarea name="ingredients" rows="4" cols="80"></textarea><br />
+          <label for="ingredients">Ingredients:</label><br />
+          <textarea id="ingredients" name="ingredients" rows="4" cols="80"></textarea><br />
 
-      <label for="method">Method:</label><br />
-      <textarea name="method" rows="8" cols="80"></textarea><br />
+          <label for="method">Method:</label><br />
+          <textarea id="method" name="method" rows="8" cols="80"></textarea><br />
 
-      <input type="submit" value="Submit">
-    </fieldset>
-  </form>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
 
-  <div id="result"></div>
-</section>
+      <div id="result"></div>
+  </div>
+</div>
 
 {{ partial "footer" . }}

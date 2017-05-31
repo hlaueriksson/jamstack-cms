@@ -2,7 +2,6 @@
 date = "2017-05-27T19:38:56+02:00"
 draft = false
 title = "About"
-layout = "about"
 
 navigation = true
 +++

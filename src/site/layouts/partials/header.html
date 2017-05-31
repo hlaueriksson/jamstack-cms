@@ -1,16 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
     <title>{{ .Site.Title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="{{ .Site.BaseURL }}">
-    <link rel="stylesheet" href="app.css"/>
+    <link href="app.css" rel="stylesheet">
+    {{ .Hugo.Generator }}
   </head>
-  <body>
-    <header>
-      <section class="navigation">
-        {{ range where .Site.Pages.ByTitle ".Params.navigation" true }}
-          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        {{ end }}
-      </section>
-    </header>
+  <body id="{{ .Layout | default "page" }}">
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ .Site.BaseURL }}">Home</a>
+            </li>
+            {{ range where .Site.Pages.ByTitle ".Params.navigation" true }}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </nav>
+        <h3 class="text-muted">{{ .Site.Title }}</h3>
+      </div>

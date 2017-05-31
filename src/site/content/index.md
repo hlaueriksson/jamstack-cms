@@ -7,4 +7,4 @@ layout = "index"
 
 # JAMstack Recipes
 
-The best jam recipes served by JAMstack and Serverless technology
+The best jam recipes served by JAMstack and Serverless technology.

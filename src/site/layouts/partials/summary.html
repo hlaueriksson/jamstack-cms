@@ -1,7 +1,5 @@
-<article>
-  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <div>
-	<img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}" width="320px" />
-    <p>{{ $.Param "description" }}</p>
-  </div>
-</article>
+<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+<p>{{ $.Param "description" }}</p>
+<a href="{{ .Permalink }}">
+  <img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}">
+</a>

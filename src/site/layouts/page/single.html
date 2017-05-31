@@ -2,9 +2,7 @@
 
 <div class="row marketing">
   <div class="col">
-		{{ range .Data.Pages }}
-			{{ partial "summary" . }}
-		{{ end }}
+    {{ .Content | markdownify }}
   </div>
 </div>
 
