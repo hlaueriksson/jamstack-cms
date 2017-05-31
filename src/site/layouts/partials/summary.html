@@ -1,5 +1,5 @@
 <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
 <p>{{ $.Param "description" }}</p>
 <a href="{{ .Permalink }}">
-  <img src="{{ .URL }}{{ $.Param "image.url" }}" alt="{{ $.Param "image.text" }}">
+  <img src="{{ .URL }}{{ $.Param "image.url" }}" class="img-fluid" alt="{{ $.Param "image.text" }}">
 </a>
