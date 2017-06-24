@@ -16,6 +16,22 @@ collections:
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "URL", name: "url", widget: "image"}
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"
+        fields:
+          - label: "Ingredient"
+            name: "ingredient"
+            widget: "object"
+            fields:
+              - {label: "Amount", name: "amount", widget: "number"}
+              - {label: "Unit", name: "unit", widget: "select", options: ["dl", "l", "kg"]}
+              - {label: "Name", name: "name", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}

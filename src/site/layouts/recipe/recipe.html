@@ -6,7 +6,7 @@
   <div class="col">
       <h1>{{ .Title }}</h1>
       <p>{{ $.Param "description" }}</p>
-      <img src="{{ $.Param "image" }}" class="img-fluid" alt="{{ .Title }}" />
+      <img src="{{ $.Param "image.url" }}" class="img-fluid" alt="{{ $.Param "image.text" }}" />
 
       <div id="measurements">
         <span>Display measurements in:</span>
@@ -19,7 +19,7 @@
       <h2>Ingredients</h2>
       <ul id="metric" class="ingredients">
         {{ range $.Param "ingredients" }}
-          <li>{{ .amount }} {{ .unit }} {{ .name }}</li>
+          <li>{{ .ingredient.amount }} {{ .ingredient.unit }} {{ .ingredient.name }}</li>
         {{ end }}
       </ul>
       <ul id="imperial" class="ingredients"></ul>
