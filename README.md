@@ -9,6 +9,7 @@ The ingredients are:
 * JavaScript: Client-side logic with [jQuery](https://jquery.com)
 * APIs: Server-side logic with [Azure Functions Core Tools](https://www.npmjs.com/package/azure-functions-core-tools) hosted on [Azure](https://azure.microsoft.com/en-us/services/functions/)
 * Markup: Static HTML generated with [Hugo](https://gohugo.io)
+* Content: Git-based Headless CMS with [Netlify CMS](https://www.netlifycms.org)
 
 The source code for the Hugo site:
 
@@ -17,13 +18,9 @@ The source code for the Hugo site:
 The source code for the Azure Functions:
 * [/src/api](/src/api)
 
-The generated static HTML:
+The site is hosted by [Netlify](https://www.netlify.com) at:
 
-* [/docs](/docs)
-
-The site is hosted by [GitHub Pages](https://pages.github.com) at:
-
-* [https://hlaueriksson.github.io/jamstack-cms/](https://hlaueriksson.github.io/jamstack-cms/)
+* [http://jamstack-cms.netlify.com](http://jamstack-cms.netlify.com)
 
 ## Run
 
@@ -51,15 +48,7 @@ Run the Azure Functions:
 
 Browse:
 
-`http://localhost:1313/jamstack-cms/`
-
-## Build
-
-Build the Hugo site:
-
-`cd src/site`
-
-`hugo --destination ../../docs`
+`http://localhost:1313`
 
 ## Attributions
 

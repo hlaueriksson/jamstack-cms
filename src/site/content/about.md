@@ -8,11 +8,15 @@ navigation = true
 
 # About
 
-This is an experiment where I'm trying to build a [JAMstack](https://jamstack.org) site with [Hugo](https://gohugo.io) and [Azure Functions](https://azure.microsoft.com/en-us/services/functions/).
+This is an experiment where I'm trying to build a [JAMstack](https://jamstack.org) site with:
+
+* [Hugo](https://gohugo.io)
+* [Azure Functions](https://azure.microsoft.com/en-us/services/functions/)
+* [Netlify CMS](https://www.netlifycms.org)
 
 The source code is available at: [https://github.com/hlaueriksson/jamstack-cms](https://github.com/hlaueriksson/jamstack-cms)
 
-The site is hosted by [GitHub Pages](https://pages.github.com) at: [https://hlaueriksson.github.io/jamstack-cms/](https://hlaueriksson.github.io/jamstack-cms/)
+The site is hosted by [Netlify](https://www.netlify.com) at: [http://jamstack-cms.netlify.com](http://jamstack-cms.netlify.com)
 
 The jam recipes was taken from the Swedish site [Tasteline.com](http://www.tasteline.com):
 
