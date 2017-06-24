@@ -6,7 +6,7 @@
   <div class="col">
       <h1>{{ .Title }}</h1>
       <p>{{ $.Param "description" }}</p>
-      <img src="{{ .URL }}{{ $.Param "image.url" }}" class="img-fluid" alt="{{ $.Param "image.text" }}" />
+      <img src="{{ $.Param "image" }}" class="img-fluid" alt="{{ .Title }}" />
 
       <div id="measurements">
         <span>Display measurements in:</span>
