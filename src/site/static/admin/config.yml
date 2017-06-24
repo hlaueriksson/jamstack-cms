@@ -32,6 +32,6 @@ collections:
             widget: "object"
             fields:
               - {label: "Amount", name: "amount", widget: "number"}
-              - {label: "Unit", name: "unit", widget: "select", options: ["dl", "l", "kg"]}
+              - {label: "Unit", name: "unit", widget: "select", options: ["", "dl", "l", "kg"]}
               - {label: "Name", name: "name", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
