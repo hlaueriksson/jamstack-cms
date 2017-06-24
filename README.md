@@ -23,7 +23,7 @@ The generated static HTML:
 
 The site is hosted by [GitHub Pages](https://pages.github.com) at:
 
-* [https://hlaueriksson.github.io/jamstack/](https://hlaueriksson.github.io/jamstack/)
+* [https://hlaueriksson.github.io/jamstack-cms/](https://hlaueriksson.github.io/jamstack-cms/)
 
 ## Run
 
@@ -51,7 +51,7 @@ Run the Azure Functions:
 
 Browse:
 
-`http://localhost:1313/jamstack/`
+`http://localhost:1313/jamstack-cms/`
 
 ## Build
 

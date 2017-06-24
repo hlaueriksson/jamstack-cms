@@ -10,9 +10,9 @@ navigation = true
 
 This is an experiment where I'm trying to build a [JAMstack](https://jamstack.org) site with [Hugo](https://gohugo.io) and [Azure Functions](https://azure.microsoft.com/en-us/services/functions/).
 
-The source code is available at: [https://github.com/hlaueriksson/jamstack](https://github.com/hlaueriksson/jamstack)
+The source code is available at: [https://github.com/hlaueriksson/jamstack-cms](https://github.com/hlaueriksson/jamstack-cms)
 
-The site is hosted by [GitHub Pages](https://pages.github.com) at: [https://hlaueriksson.github.io/jamstack/](https://hlaueriksson.github.io/jamstack/)
+The site is hosted by [GitHub Pages](https://pages.github.com) at: [https://hlaueriksson.github.io/jamstack-cms/](https://hlaueriksson.github.io/jamstack-cms/)
 
 The jam recipes was taken from the Swedish site [Tasteline.com](http://www.tasteline.com):
 
