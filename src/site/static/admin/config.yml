@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: hlaueriksson/jamstack-cms # Path to your Github repository
+  branch: master # Branch to update
+
+media_folder: "src/site/static/images/uploads" # Media files will be stored here
+public_folder: "/images/uploads" # The src attribute for uploaded media
+
+collections:
+  - name: "recipe" # Used in routes, e.g. /admin/collections/recipe
+    label: "Recipe" # Used in the UI
+    folder: "src/site/content/recipe" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template i.e. title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
